@@ -22,6 +22,21 @@ html {
 	height: 154px;
 	background-color: #f2f2f2;
   }
+  .swipper-wrapper{
+	height: 104px ;
+  }
+  .swiper-pagination{
+	margin-bottom: 24px;
+  }
+  .swiper-pagination-bullet {
+	background-color: #ddd !important;
+	opacity: 1 !important;
+}
+  .swiper-pagination-bullet-active{
+	background-color: #B5B6BC !important;
+	opacity: 1 !important;
+
+}
 
 .swiper-slide{
 	display: flex;
