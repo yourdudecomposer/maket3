@@ -1,0 +1,36 @@
+html {
+	font-family: 'TT Lakes', Tahoma, sans-serif;
+
+}
+
+/* *{
+	border: .1px solid;
+} */
+
+.header__title{
+	margin: 16px;
+	color:  #7E7E82;
+	font-size: 16px;
+	line-height: 24px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.swiper {
+	width: 100%;
+	height: 154px;
+	background-color: #f2f2f2;
+  }
+
+  .slider-item{
+	width: 240px;
+	height: 70px;
+	background-color: #fff;
+	border: 1px solid #eaeaea;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 16px ;
+margin: 16px;
+  }

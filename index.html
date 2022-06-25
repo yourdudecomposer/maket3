@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="fonts/stylesheet.css"> -->
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="header__title">Ремонт техники различных брендов</h2>
+    </header>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/lenovo.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/samsung.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/apple.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/view-sonic.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/bosch.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/hp.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/aser.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/sony.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="img/lenovo.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </div>
+            </div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+
+</html>
