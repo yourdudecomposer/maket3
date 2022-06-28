@@ -1,13 +1,20 @@
 
-
 html {
 	font-family: 'TT Lakes', Tahoma, sans-serif;
-
-}
-
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
 /* *{
 	border: .1px solid;
 } */
+
+
+/* HEADER */
+.header{
+	border-top: 1px solid #D9FFF5;
+}
 
 .header__title{
 	margin: 16px;
@@ -18,56 +25,13 @@ html {
 	font-weight: normal;
 }
 
-.swiper {
-	height: 154px;
+.brands {
 	background-color: #f2f2f2;
   }
-  .swipper-wrapper{
-	height: 104px ;
-  }
-  .swiper-pagination{
-	margin-bottom: 24px;
-  }
-  .swiper-pagination-bullet {
-	background-color: #ddd !important;
-	opacity: 1 !important;
-}
-  .swiper-pagination-bullet-active{
-	background-color: #B5B6BC !important;
-	opacity: 1 !important;
 
-}
 
-.swiper-slide{
-	display: flex;
-	justify-content: center;
-	flex-shrink: 1 !important;
-}
-  .swiper::after {
-	content: '';
-	height: 81px;
-	width: 24px;
-	position: absolute;
-	right: 0;
-	top: 7px;
-	background: linear-gradient(to right, transparent, #f2f2f2 80%);
-	z-index: 10;
-}
-  .swiper::before {
-	content: '';
-	height: 81px;
-	width: 24px;
-	position: absolute;
-	left: 0;
-	top: 7px;
-	background: linear-gradient(to left, transparent, #f2f2f2 80%);
-	z-index: 10;
-	/* background-color: red; */
-}
-
-  .slider-item{
-	width: 208px;
-	height: 70px;
+.brendButton{
+	height: 72px;
 	background-color: #fff;
 	border: 1px solid #eaeaea;
 	border-radius: 6px;
@@ -75,10 +39,165 @@ html {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 15px ;
-	margin-top: 16px;
-	margin-left: 16px;
   }
 
-  .link-from-slider{
-	height: 40px;
+  @media (min-width: 1120px) {
+	/* .hide768{
+		display: none;
+	} */
+	.header__title{
+		margin: 16px 32px;
+	}
+	.brands{
+		padding: 16px 16px;
+
+	}
+	.brands-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  .brendButton{
+		width: 240px;
+		margin:8px 16px;
+	  }
+	  .expand{
+		display: flex;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+		margin-left: 12px;
+		margin-bottom: 18px;
+		margin-top: 16px;
+		background-color: #f2f2f2;
+	}
+	.expand__text{
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 500;
+		margin: 0;
+		margin-left: 8px;
+	}
+	.hide1120{
+		display:none ;
+	}
+
   }
+
+  @media (min-width:767px) and (max-width: 1119px) {
+	/* .hide768{
+		display: none;
+	} */
+	.header__title{
+		margin: 16px 24px;
+	}
+	.brands{
+		padding: 16px 12px;
+
+	}
+
+	.brands-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  .brendButton{
+		margin:8px 12px;
+		width: 224px;
+	  }
+	  .expand{
+		display: flex;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+		margin-left: 12px;
+		margin-bottom: 18px;
+		margin-top: 16px;
+		background-color: #f2f2f2;
+	}
+	.expand__text{
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 500;
+		margin: 0;
+		margin-left: 8px;
+	}
+	.hide768{
+		display:none ;
+	}
+
+  }
+  
+
+
+
+
+
+
+@media (max-width: 767px) {
+	  /* PAGINATION */
+	  .swiper-pagination{
+		margin-bottom: 24px;
+		
+	  }
+	  .swiper-pagination-bullet {
+		background-color: #ddd !important;
+		opacity: 1 !important;
+	}
+	  .swiper-pagination-bullet-active{
+		background-color: #B5B6BC !important;
+		opacity: 1 !important;
+	
+	}
+
+	.swiper::after {
+		content: '';
+		height: 81px;
+		width: 24px;
+		position: absolute;
+		right: 0;
+		top: 7px;
+		background: linear-gradient(to right, transparent, #f2f2f2 80%);
+		z-index: 10;
+	}
+	  .swiper::before {
+		content: '';
+		height: 81px;
+		width: 24px;
+		position: absolute;
+		left: 0;
+		top: 7px;
+		background: linear-gradient(to left, transparent, #f2f2f2 80%);
+		z-index: 10;
+	}
+	.swiper {
+		height: 154px;
+	  }
+}
+
+
+/* .swiper {
+	height: 154px;
+	background-color: #f2f2f2;
+  }
+
+
+  .swipper-wrapper{
+	height: 104px ;
+  }
+
+
+
+
+.swiper-slide{
+	display: flex;
+	justify-content: center;
+}
+.link-from-slider{
+	height: 40px;
+  } */
+
+
+  
+
+
+
+  

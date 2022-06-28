@@ -6,79 +6,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <title>Document</title>
 
 </head>
 
 <body>
+
     <header class="header">
         <h2 class="header__title">Ремонт техники различных брендов</h2>
     </header>
 
-    <div class="swiper">
+    <div class="swiper brands">
         <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
+        <div class="swiper-wrapper brands-wrapper">
             <!-- Slides -->
 
             <div class="swiper-slide">
-                <div class="slider-item">
+                <button class="brendButton">
                     <img src="img/lenovo.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
             <div class="swiper-slide">
-                <div class="slider-item">
+                <button class="brendButton">
                     <img src="img/samsung.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
             <div class="swiper-slide">
-                <div class="slider-item">
+                <button class="brendButton">
                     <img src="img/apple.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
             <div class="swiper-slide">
-                <div class="slider-item">
+                <button class="brendButton">
                     <img src="img/view-sonic.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
             <div class="swiper-slide">
-                <div class="slider-item">
+                <button class="brendButton">
                     <img src="img/bosch.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
             <div class="swiper-slide">
-                <div class="slider-item">
+                <button class="brendButton">
                     <img src="img/hp.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
-            <div class="swiper-slide">
-                <div class="slider-item">
+            <div class="swiper-slide hide768">
+                <button class="brendButton">
                     <img src="img/aser.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
-            <div class="swiper-slide">
-                <div class="slider-item">
+            <div class="swiper-slide hide768">
+                <button class="brendButton">
                     <img src="img/sony.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
-            <div class="swiper-slide">
-                <div class="slider-item">
+            <div class="swiper-slide hide768 hide1120">
+                <button class="brendButton">
                     <img src="img/lenovo.svg" alt="">
-                    <a href='#' class = 'link-from-slider'><img src="img/go.svg" alt="" class="slider-link"></a>
-                </div>
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
+            </div>
+            <div class="swiper-slide hide768 hide1120">
+                <button class="brendButton">
+                    <img src="img/samsung.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
+            </div>
+            <div class="swiper-slide hide768 hide1120">
+                <button class="brendButton">
+                    <img src="img/apple.svg" alt="">
+                    <img src="img/go.svg" alt="" class="slider-link">
+                </button>
             </div>
         </div>
+        <button class="expand">
+            <img src="/img/expandDown.svg" alt="" class="expand__img">
+            <p class="expand__text">Показать все</p>
+        </button>
+
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
