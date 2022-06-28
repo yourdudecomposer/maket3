@@ -7,7 +7,6 @@ window.onload = () => {
             width: 240,
             spaceBetween: 16,
             direction: 'horizontal',
-            loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
