@@ -1,10 +1,8 @@
 import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
-let swiperStyleLink = 'https://unpkg.com/swiper@8/swiper-bundle.min.css';
 
 
 window.onload = () => {
     if (window.matchMedia('(max-width: 767px)').matches) {
-        document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${swiperStyleLink}" />`;
             new Swiper('.swiper', {
             width: 240,
             spaceBetween: 16,

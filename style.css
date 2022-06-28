@@ -134,6 +134,8 @@ html {
 	.swiper-pagination-bullet {
 		background-color: #ddd !important;
 		opacity: 1 !important;
+		width: 12px !important;
+		height: 12px !important;
 	}
 
 	.swiper-pagination-bullet-active {
