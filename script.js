@@ -6,9 +6,9 @@ window.onload = () => {
     if (window.matchMedia('(max-width: 767px)').matches) {
         document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${swiperStyleLink}" />`;
         let swiper = new Swiper('.swiper', {
-            width: 208,
-            spaceBetween: 16,
-            slidesPerView: 1,
+            // width: 208,
+            // spaceBetween: 16,
+            // slidesPerView: 1,
             direction: 'horizontal',
             loop: true,
             pagination: {

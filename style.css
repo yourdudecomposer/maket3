@@ -1,36 +1,90 @@
-
 html {
 	font-family: 'TT Lakes', Tahoma, sans-serif;
 	box-sizing: border-box;
-  }
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
-  }
+}
+
 /* *{
 	border: .1px solid;
 } */
 
 
 /* HEADER */
-.header{
+.header {
 	border-top: 1px solid #D9FFF5;
 }
 
-.header__title{
-	margin: 16px;
-	color:  #7E7E82;
+.header__title {
+	color: #7E7E82;
 	font-size: 16px;
 	line-height: 24px;
 	text-transform: uppercase;
 	font-weight: normal;
 }
 
+@media (max-width: 767px) {
+	.header__title {
+		margin: 16px;
+	}
+}
+
+@media (min-width:767px) and (max-width: 1119px) {
+	.header__title {
+		margin: 16px 24px;
+	}
+}
+
+@media (min-width: 1120px) {
+	.header__title {
+		margin: 16px 32px;
+	}
+}
+
+
+/* CONTAINER */
 .brands {
 	background-color: #f2f2f2;
-  }
+}
+@media (min-width: 768px) {
+	.brands-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+@media (min-width: 1120px) {
+	.brands {
+		padding: 16px 16px;
+	}
+	.hide1120 {
+		display: none;
+	}
+
+}
+
+@media (min-width:767px) and (max-width: 1119px) {
+	.brands {
+		padding: 16px 12px;
+
+	}
+	.brendButton {
+		width: 224px;
+		margin: 8px 12px;
+	}
+	.hide768 {
+		display: none;
+	}
+
+}
 
 
-.brendButton{
+/* BRENDBUTTON */
+.brendButton {
 	height: 72px;
 	background-color: #fff;
 	border: 1px solid #eaeaea;
@@ -38,114 +92,46 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 15px ;
-  }
-
-  @media (min-width: 1120px) {
-	/* .hide768{
-		display: none;
-	} */
-	.header__title{
-		margin: 16px 32px;
-	}
-	.brands{
-		padding: 16px 16px;
-
-	}
-	.brands-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-	  }
-	  .brendButton{
+	padding: 0 15px;
+}
+@media (min-width: 1120px) {
+	.brendButton {
 		width: 240px;
-		margin:8px 16px;
-	  }
-	  .expand{
-		display: flex;
-		border: none;
-		cursor: pointer;
-		padding: 0;
-		margin-left: 12px;
-		margin-bottom: 18px;
-		margin-top: 16px;
-		background-color: #f2f2f2;
-	}
-	.expand__text{
-		font-size: 16px;
-		line-height: 24px;
-		font-weight: 500;
-		margin: 0;
-		margin-left: 8px;
-	}
-	.hide1120{
-		display:none ;
-	}
-
-  }
-
-  @media (min-width:767px) and (max-width: 1119px) {
-	/* .hide768{
-		display: none;
-	} */
-	.header__title{
-		margin: 16px 24px;
-	}
-	.brands{
-		padding: 16px 12px;
-
-	}
-
-	.brands-wrapper {
-		display: flex;
-		flex-wrap: wrap;
-	  }
-	  .brendButton{
-		margin:8px 12px;
+		margin: 8px 16px;
+	}	
+}
+@media (min-width:768px) and (max-width: 1119px) {
+	.brendButton {
 		width: 224px;
-	  }
-	  .expand{
-		display: flex;
-		border: none;
-		cursor: pointer;
-		padding: 0;
-		margin-left: 12px;
-		margin-bottom: 18px;
-		margin-top: 16px;
-		background-color: #f2f2f2;
+		margin: 8px 12px;
 	}
-	.expand__text{
-		font-size: 16px;
-		line-height: 24px;
-		font-weight: 500;
-		margin: 0;
-		margin-left: 8px;
+}
+@media (max-width:767px){
+	.brendButton {
+		box-sizing: border-box;
+		width: 240px;
+		margin: 8px 12px;
 	}
-	.hide768{
-		display:none ;
-	}
-
-  }
-  
-
-
-
-
-
+}
+/* SWIPER */
 
 @media (max-width: 767px) {
-	  /* PAGINATION */
-	  .swiper-pagination{
+
+	/* PAGINATION */
+	.swiper-pagination {
 		margin-bottom: 24px;
-		
-	  }
-	  .swiper-pagination-bullet {
+
+	}
+
+	.swiper-pagination-bullet {
 		background-color: #ddd !important;
 		opacity: 1 !important;
 	}
-	  .swiper-pagination-bullet-active{
+
+	.swiper-pagination-bullet-active {
 		background-color: #B5B6BC !important;
 		opacity: 1 !important;
-	
+
 	}
 
 	.swiper::after {
@@ -158,7 +144,8 @@ html {
 		background: linear-gradient(to right, transparent, #f2f2f2 80%);
 		z-index: 10;
 	}
-	  .swiper::before {
+
+	.swiper::before {
 		content: '';
 		height: 81px;
 		width: 24px;
@@ -168,13 +155,11 @@ html {
 		background: linear-gradient(to left, transparent, #f2f2f2 80%);
 		z-index: 10;
 	}
+
 	.swiper {
 		height: 154px;
-	  }
-}
-
-
-/* .swiper {
+	}
+	.swiper {
 	height: 154px;
 	background-color: #f2f2f2;
   }
@@ -193,11 +178,60 @@ html {
 }
 .link-from-slider{
 	height: 40px;
-  } */
+  }
+}
 
 
-  
 
 
 
-  
+/* EXPAND-BTN */
+.expand {
+	display: flex;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	background-color: #f2f2f2;
+	margin-bottom: 18px;
+	margin-top: 16px;
+}
+.expand__text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	margin: 0;
+
+}
+
+@media (max-width: 767px) {
+	.expand {
+		display: none;
+	}
+}
+@media (min-width:767px) and (max-width: 1119px) {
+	.expand {
+		margin-left: 12px;
+	}
+	.expand__text {
+		margin-left: 9px;
+	}
+}
+@media (min-width: 1120px) {
+	.expand {
+		margin-left: 15px;
+	}
+	.expand__text {
+		margin-left: 8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
